@@ -5,9 +5,9 @@ wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch
 rpm -ivh /root/epel-release-6-8.noarch.rpm
 wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm /root/remi-release-6.rpm
 rpm -Uvh /root/remi-release-6.rpm
-wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm /root/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
 rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt -y
-rpm -ivh rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+rpm -ivh /root/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
 rpm --import https://download.owncloud.org/download/repositories/9.0/CentOS_6_SCL_PHP54/repodata/repomd.xml.key
 wget http://download.owncloud.org/download/repositories/9.0/CentOS_6_SCL_PHP54/ce:9.0.repo -O /etc/yum.repos.d/ce:9.0.repo
 yum clean all -y
