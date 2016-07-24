@@ -28,4 +28,6 @@ EOF
 echo "User		Password	Database"
 echo "root		"$pass
 echo "owncloud_admin		"$ownpass"	owncloud"
-echo "For finish installation go to http(s)://domain/owncloud/
+echo "For finish installation go to http(s)://domain/owncloud/"
+service mysqld restart
+service httpd restart
