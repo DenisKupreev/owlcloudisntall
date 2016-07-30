@@ -1,11 +1,11 @@
 #!/bin/bash
 cd /root/
 yum update -y
-wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm /root/epel-release-6-8.noarch.rpm
+wget -P /root/ http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -ivh /root/epel-release-6-8.noarch.rpm
-wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm /root/remi-release-6.rpm
+wget -P /root/ http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 rpm -Uvh /root/remi-release-6.rpm
-wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm /root/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+wget -P /root/ http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
 rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt -y
 rpm -ivh /root/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
 rpm --import https://download.owncloud.org/download/repositories/9.0/CentOS_6_SCL_PHP54/repodata/repomd.xml.key
